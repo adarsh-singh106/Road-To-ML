@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- VIEW MODE -->
+    <div class="container" id="container">
+        <h1>User Profile</h1>
+        <img src="./images/profile-1.jpg" alt="user-profile">
+
+        <div>
+            <span>Name:</span>
+            <h3 id="name">Anna Smith</h3>
+        </div>
+        <hr>
+
+        <div>
+            <span>Email:</span>
+            <h3 id="email">anna.smith@example.com</h3>
+        </div>
+        <hr>
+
+        <div>
+            <span>Interests:</span>
+            <h3 id="interests">coding</h3>
+        </div>
+        <hr>
+
+        <button class="button" onclick="updateProfile()">Edit Profile</button>
+    </div>
+
+    <!-- EDIT MODE -->
+    <div class="container" id="container-edit">
+        <h1>Edit Profile</h1>
+        <img src="https://via.placeholder.com/300" alt="user-profile">
+
+        <label for="input-name">Name:</label>
+        <input type="text" id="input-name">
+
+        <label for="input-email">Email:</label>
+        <input type="email" id="input-email">
+
+        <label for="input-interests">Interests:</label>
+        <input type="text" id="input-interests">
+
+        <button class="button" onclick="handleUpdateProfileRequest()">Update Profile</button>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
